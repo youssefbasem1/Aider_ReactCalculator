@@ -145,6 +145,6 @@ npm install
 npm start
 ```
 
-5. Open the app in your browser at http://localhost:4000
+5. Open the app in your browser at http://localhost:3000
 
 Try using the keyboard and backspace functionality to test the enhancements.
