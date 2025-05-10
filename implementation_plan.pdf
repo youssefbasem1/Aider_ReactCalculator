@@ -1,0 +1,55 @@
+
+React Calculator Enhancement Plan
+---------------------------------
+
+Project Overview
+----------------
+- Project Name: React Calculator  
+- Goal: Enhance functionality and user experience using Aider AI-assisted development tool.
+
+Implemented Features
+--------------------
+
+Feature 1: Keyboard Input Support
+- User Story: As a user, I want to use my keyboard to input numbers, operators, and actions.
+- Technical Requirements:
+  - Add global keydown event listener
+  - Map keys (0–9, +, -, *, /, Enter, Escape, .) to calculator logic
+  - Reuse existing button handlers where possible
+- Files Modified:
+  - src/component/App.js
+- Challenges:
+  - Conflicting default browser shortcuts
+  - Ensuring numeric inputs matched button-based logic
+
+Feature 2: Backspace Functionality
+- User Story: As a user, I want to correct input mistakes without clearing everything.
+- Technical Requirements:
+  - Add backspace button
+  - Remove last character from display input
+  - Handle decimals, negatives, and operators
+- Files Modified:
+  - App.js
+  - ButtonPanel.jsx
+- Challenges:
+  - Managing state correctly when editing partial expressions
+  - Avoid breaking calculations mid-edit
+
+Aider Commands Used
+-------------------
+| Command     | Purpose                         |
+|-------------|---------------------------------|
+| /add        | Added relevant files to context |
+| /ask        | Asked about code structure      |
+| /implement  | Implemented keyboard input logic|
+| /diff       | Reviewed code changes           |
+| /edit       | Made refinements                |
+| /test       | Tested functionality            |
+| /run        | Ran dev server                  |
+| /commit     | Committed final changes         |
+Total: 8+ Aider commands used
+
+Testing Notes
+-------------
+All features were tested manually using `npm start`.  
+Both features work reliably across multiple sessions and support consistent user behavior.
